@@ -7,6 +7,7 @@ public class Process {
 	
 	private String name;
 	private int burstTime;
+	private int waitTime;
 
 	public Process(String name, int burstTime) {
 		
@@ -28,7 +29,13 @@ public class Process {
 		this.burstTime = burstTime;
 	}
 	
-	
-	
+	public int getWaitTime() {
+		return waitTime;
+	}
+
+	public void setWaitTime(int waitTime) {
+		this.waitTime = waitTime;
+	}
+		
 
 }

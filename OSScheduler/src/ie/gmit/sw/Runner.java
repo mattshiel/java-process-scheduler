@@ -9,7 +9,7 @@ public class Runner {
 		Scanner scanner = new Scanner(System.in);
 		
 		// Average wait time of the process
-		int avgWaitTime = 0;
+		double avgWaitTime = 0;
 		
 		//
 		System.out.print("Please enter the amount of process to be scheduled: ");
@@ -42,7 +42,7 @@ public class Runner {
 				//avgWaitTime = Scheduler.roundRobin(processes, quantum);
 				break;
 			case 2:
-				//avgWaitTime = Scheduler.firstComeFirstServe(processes);
+				avgWaitTime = Scheduler.firstComeFirstServed(processes);
 				break;
 			case 3:
 				//avgWaitTime = Scheduler.shortestJobFirst(processes);
