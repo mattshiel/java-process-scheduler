@@ -15,7 +15,7 @@ public class Runner {
 		System.out.print("Please enter the amount of process to be scheduled: ");
 		int numProcesses = scanner.nextInt();
 		
-		ArrayList<Process> processes = new ArrayList<Process>(numProcesses);
+		List<Process> processes = new ArrayList<Process>(numProcesses);
 		
 		System.out.println("Enter the process time and burst time for the process");
 

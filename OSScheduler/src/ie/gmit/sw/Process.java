@@ -10,7 +10,8 @@ public class Process {
 	private int waitTime;
 
 	public Process(String name, int burstTime) {
-		
+		this.name = name;
+		this.burstTime = burstTime;
 	}
 
 	public String getName() {
@@ -36,6 +37,10 @@ public class Process {
 	public void setWaitTime(int waitTime) {
 		this.waitTime = waitTime;
 	}
-		
-
+	
+	@Override 
+	public String toString() {
+		return String.format("%-16s%-16d%-16d", name, burstTime, waitTime);
+	}
+	
 }
