@@ -45,7 +45,7 @@ public class Runner {
 				avgWaitTime = Scheduler.firstComeFirstServed(processes);
 				break;
 			case 3:
-				//avgWaitTime = Scheduler.shortestJobFirst(processes);
+				avgWaitTime = Scheduler.shortestJobFirst(processes);
 				break;
 				
 			case 4:
