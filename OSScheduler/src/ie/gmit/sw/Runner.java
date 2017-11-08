@@ -37,9 +37,9 @@ public class Runner {
 		
 		switch(choice) {
 			case 1:
-				//System.out.print("Please enter a quantum: ");
-				//int quantum = scanner.nextInt();
-				//avgWaitTime = Scheduler.roundRobin(processes, quantum);
+				System.out.print("Please enter a quantum: ");
+				int quantum = scanner.nextInt();
+				avgWaitTime = Scheduler.roundRobin(processes, quantum);
 				break;
 			case 2:
 				avgWaitTime = Scheduler.firstComeFirstServed(processes);

@@ -8,10 +8,13 @@ public class Process {
 	private String name;
 	private int burstTime;
 	private int waitTime;
+	private int waitCount;
 
 	public Process(String name, int burstTime) {
 		this.name = name;
 		this.burstTime = burstTime;
+		this.waitTime = 0;
+		this.waitCount = 0;
 	}
 
 	public String getName() {
@@ -36,6 +39,19 @@ public class Process {
 
 	public void setWaitTime(int waitTime) {
 		this.waitTime = waitTime;
+	}
+	
+	public void incWaitCount() {
+		waitCount++;
+	}
+	
+	public int getWaitCount() {
+		return waitCount;
+	}
+	
+	public void decBurstTime(int change) {
+		this.burstTime -= change;
+		this.burstTime = this.burstTime < 0 ? 0 : this.burstTime;
 	}
 	
 	@Override 
